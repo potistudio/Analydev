@@ -22,5 +22,8 @@
   "homepage": "https://github.com/potistudio/Analydev#readme",
   "devDependencies": {
     "electron": "^21.2.0"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
   }
 }

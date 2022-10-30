@@ -15,7 +15,7 @@ body {
 	top: 40px;
 	left: 40px;
 	width: 400px;
-	height: 216px;
+	height: 124px;
 	border-radius: 8px;
 	border: solid 2px #888888;
 	overflow: hidden;
@@ -98,13 +98,14 @@ body {
 
 .Task-List .List {
 	position: absolute;
-	top: 96px;
+	top: 78px;
 	left: 20px;
 	width: calc(100% - 40px);
 }
 
 .Task-List .List .List-Element {
 	position: relative;
+	margin: 8px 0;
 	top: 0;
 	left: 0;
 	width: 100%;

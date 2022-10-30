@@ -13,7 +13,11 @@ function createWindow() {
 	mainWindow = new BrowserWindow ({
 		width: 1280,
 		height: 720,
-		show: false
+		show: false,
+		webPreferences: {
+			nodeIntegration: true,
+			contextIsolation: false
+		}
 	});
 
 	mainWindow.webContents.loadFile (path.join(__dirname, "../static", "index.html"));
