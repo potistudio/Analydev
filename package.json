@@ -4,7 +4,8 @@
   "description": "A Task Manager for Developer",
   "main": "./src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/potistudio/Analydev/issues"
   },
-  "homepage": "https://github.com/potistudio/Analydev#readme"
+  "homepage": "https://github.com/potistudio/Analydev#readme",
+  "devDependencies": {
+    "electron": "^21.2.0"
+  }
 }
