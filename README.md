@@ -1,2 +1,2 @@
 # Analydev
- A Task Manager for Developer
+A Task Manager for Developer
