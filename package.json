@@ -1,0 +1,22 @@
+{
+  "name": "analydev",
+  "version": "1.0.0",
+  "description": "A Task Manager for Developer",
+  "main": "./src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potistudio/Analydev.git"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "POTI-Studio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/potistudio/Analydev/issues"
+  },
+  "homepage": "https://github.com/potistudio/Analydev#readme"
+}
