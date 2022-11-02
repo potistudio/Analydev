@@ -10,12 +10,13 @@ body {
 	color: #222222;
 }
 
+
 .Task-List {
 	position: absolute;
 	top: 40px;
 	left: 40px;
 	width: 400px;
-	height: 124px;
+	height: 196px;
 	border-radius: 8px;
 	border: solid 2px #888888;
 	overflow: hidden;
@@ -31,6 +32,7 @@ body {
 	background-color: #EE5B24;
 }
 
+
 .Task-List .Title {
 	position: absolute;
 	top: 16px;
@@ -42,6 +44,21 @@ body {
 	line-height: 28px;
 	text-align: center;
 }
+
+
+.Task-List .Task-Name-Input {
+	position: absolute;
+	padding-left: 12px;
+	left: 20px;
+	bottom: 66px;
+	width: calc(100% - 40px);
+	height: 48px;
+	border: none;
+	outline: none;
+	background: #00000000;
+	font-size: 24px;
+}
+
 
 .Task-List .Add-Task-Button {
 	position: absolute;
@@ -56,6 +73,7 @@ body {
 	overflow: hidden;
 	cursor: pointer;
 }
+
 
 /*
 .Task-List .Add-Task-Button::after {
@@ -73,6 +91,7 @@ body {
 	transform: scale(0.0);
 }
 */
+
 
 .Task-List .Add-Task-Button:hover {
 	background-color: #E2E2E2;
@@ -96,12 +115,14 @@ body {
 	line-height: 24px;
 }
 
+
 .Task-List .List {
 	position: absolute;
 	top: 78px;
 	left: 20px;
 	width: calc(100% - 40px);
 }
+
 
 .Task-List .List .List-Element {
 	position: relative;
@@ -112,4 +133,14 @@ body {
 	height: 48px;
 	border-radius: 4px;
 	border: solid 2px #888888;
+}
+
+.Task-List .List .List-Element span {
+	position: absolute;
+	margin-left: 16px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	line-height: 44px;
+	font-size: 24px;
 }
