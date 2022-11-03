@@ -36,12 +36,12 @@ document.addEventListener ("keydown", (_e) => {
 
 				taskNameInput.value = "New Task";
 				taskNameInput.select();
-				taskNameInput.focus ({ preventScroll: false });
+
 				anime ({
 					targets: "#taskNameInput",
 					opacity: [0, 1],
 					duration: 400,
-					easing: "easeOutExpo"
+					easing: "easeOutExpo",
 				});
 
 				currentListHeight += ELEMENT_HEIGHT;
@@ -58,7 +58,8 @@ document.getElementById ("addTaskButton").addEventListener ("click", () => {
 		targets: "#taskNameInput",
 		opacity: [0, 1],
 		duration: 400,
-		easing: "easeOutExpo"
+		easing: "easeOutExpo",
+		begin: () => taskNameInput.style.visibility = "visible"
 	});
 
 	if (waitingInput) return; // If Waiting Input, Refocus to the Input Form.
@@ -79,7 +80,8 @@ function cancelInput() {
 		targets: "#taskNameInput",
 		opacity: 0,
 		duration: 400,
-		easing: "easeOutExpo"
+		easing: "easeOutExpo",
+		complete: () => taskNameInput.style.visibility = "hidden"
 	});
 	taskNameInput.blur();
 
