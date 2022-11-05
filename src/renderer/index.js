@@ -18,7 +18,7 @@ window.onload = () => {
 
 
 document.addEventListener ("keydown", (_e) => {
-	console.log (_e.key)
+	console.log ("KeyDown" + _e.key)
 	switch (_e.key) {
 		case "Escape":
 			_e.preventDefault();
@@ -47,13 +47,13 @@ document.addEventListener ("keydown", (_e) => {
 				currentListHeight += ELEMENT_HEIGHT;
 				setListHeight (currentListHeight);
 			}
+
 		break;
 	}
 });
 
 
 document.getElementById ("addTaskButton").addEventListener ("click", () => {
-	// taskNameInput.style.visibility = "visible";
 	anime ({
 		targets: "#taskNameInput",
 		opacity: [0, 1],
@@ -75,7 +75,6 @@ document.getElementById ("addTaskButton").addEventListener ("click", () => {
 
 function cancelInput() {
 	waitingInput = false;
-	// taskNameInput.style.visibility = "hidden";
 	anime ({
 		targets: "#taskNameInput",
 		opacity: 0,
